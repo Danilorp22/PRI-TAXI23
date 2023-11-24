@@ -1,0 +1,129 @@
+    Manual Técnico
+
+1.	Introducción:
+“PRI-TAXI” es una aplicación que tiene como objetivo ayudar a la comunidad de conductores taxis y clientes para poder recurrir de una ubicación a otra según el gusto del cliente y sin poder abusar en casos de precio al conductor es una aplicación muy fácil de manipular.  
+2.	Descripción del proyecto:
+Este proyecto tiene la funcionalidad de trabajar con Api de google para poder mostrar mapas y también utiliza firebase para poder almacenar los datos registrados, esta aplicación está desarrollada en Android Studio en lenguaje Java utilizamos también diferentes implementaciones dentro del proyecto para mayor facilidad ya que en Android Studio podemos utilizar librerías que contienen métodos.
+3.	Roles / integrantes
+-Conductor: Este es un Apartado donde este podrá ser un conductor de Taxi quien podrá ver la ubicación actual del cliente para poder recogerlo.
+-Cliente: Este podrá su ubicación actual y podrá marcar la ubicación de su destino. 
+4.	Arquitectura del software: Explicación de la estructura y organización del software, incluyendo los componentes principales, las interacciones entre ellos y los patrones de diseño utilizados.
+El software esta estructurados entren en cliente y conductor los códigos están organizados por carpetas, utilizamos el patrón de diseño MVC donde este esta estructurados en clientes y conductores, los componentes que usamos son librerías de google service para el funcionamiento de mapas con el API para que cuando un cliente pueda marcar su ubicación en tiempo real y también pueda marcar la ubicación final donde se lo llevara y en el caso del conductor también utilizamos mapas para que pueda ver la ubicación del cliente, también usamos componentes de firebase para el almacenamiento de datos de estos mismos. 
+5.	Requisitos del sistema:
+•	Requerimientos de Hardware (mínimo): (Cliente)
+a.	Dispositivo Android con al menos 2 GB de RAM.
+b.	Procesador de doble núcleo o superior.
+c.	Conexión a Internet estable para la descarga y carga de datos.
+•	Requerimientos de Software: (Cliente)
+a.	Sistema operativo Android 5.0 (Lollipop) o superior.
+b.	Última versión de la aplicación instalada desde la tienda de aplicaciones.
+•	Requerimientos de Hardware (Server/Hosting/BD)
+a.	Servidor con capacidad suficiente para manejar el tráfico esperado. Esto dependerá del número de usuarios y la complejidad de las operaciones realizadas en el servidor.
+b.	Almacenamiento suficiente para la base de datos y otros archivos estáticos.
+•	Requerimientos de Software (Server/Hosting/BD)
+a.	Servicio de hosting que sea compatible con las necesidades del servidor de la aplicación. Por ejemplo, Firebase Hosting para el sitio web y Firebase Realtime Database o Cloud Firestore para la base de datos.
+b.	Configuración de seguridad adecuada para proteger la base de datos y los servicios en la nube. Asegúrate de seguir las mejores prácticas de seguridad proporcionadas por Firebase.
+
+6.	Instalación y configuración: Instrucciones detalladas sobre cómo instalar el software, configurar los componentes necesarios y establecer la conexión con otros sistemas o bases de datos.
+El software es una apelación móvil y para poder instalarlo solo se necesita descargar el apk la configuración de base de datos, estamos usando firebase y para poder cambiar de base de datos se pone la configuración en firebase cambiando las credenciales del proyecto.
+
+7.	PROCEDIMIENTO DE HOSTEADO / HOSTING (configuración)
+•	Sitio Web.
+•	B.D.
+•	API / servicios Web
+Una vez descomprimido el proyecto 
+•	 
+API de Google Maps : este está ubicado en la carpeta res , dentro de la carpeta valúes con el nombre de google_mapas_api y si quiere cambiar el API tiene que cambiar lo que esta con Azul
+ AIzaSyA_bUjws5l36K5mYV0D4aK9F3PL6Qv0WLo este es el API que nosotros Utilizamos
+
+•	Otros (firebase, etc.)
+FireBase: Correo Utilizado es: 
+denis.hamilton.almaquio@gmail.com 
+Contraseña: Denis74704245
+Con esta cuenta donde podrá ver si los valores o datos se almacenaron correctamente 
+
+Detalle DETALLADO paso a paso de la puesta en marcha en hosting, tanto para el sitio Web, API, B.D., etc.etc. (incluir scripts BD, Credenciales de acceso server, root BD, Admin, users clientes etc.)
+
+8.	GIT : 
+•	Versión final entregada del proyecto.
+•	Entrega compilados ejecutables
+
+9.	Personalización y configuración: Información sobre cómo personalizar y configurar el software según las necesidades del usuario, incluyendo opciones de configuración, parámetros y variables.
+
+Nuestra aplicación no cuenta con configuraciones para que funcione porque es un apk móvil la cual funciona en la mayoría de los dispositivos.
+
+10.	Seguridad: Consideraciones de seguridad y recomendaciones para proteger el software y los datos, incluyendo permisos de acceso, autenticación y prácticas de seguridad recomendadas. 
+
+Nuestro software tiene validaciones en ciertos aspectos como el de la contraseña que no ingresará manos 6 valores también habrá que habilitar el tema del GPS en el dispositivo móvil ya que este necesitar estar conectado con el GPS para tener la ubicación 
+
+11.	Depuración y solución de problemas: Instrucciones sobre cómo identificar y solucionar problemas comunes, mensajes de error y posibles conflictos con otros sistemas o componentes.
+
+12.	Glosario de términos: Un glosario que incluya definiciones de términos técnicos y conceptos utilizados en el manual.
+•	Android Studio:
+o	Entorno de desarrollo integrado (IDE) oficial para el desarrollo de aplicaciones Android. Proporciona herramientas para diseñar, codificar, depurar y probar aplicaciones.
+
+•	API (Interfaz de Programación de Aplicaciones):
+o	Conjunto de reglas y herramientas que permite a las aplicaciones comunicarse entre sí. En este proyecto, se refiere a las API de Google Maps utilizadas para integrar funcionalidades de mapas.
+
+•	Firebase:
+o	Plataforma de desarrollo de aplicaciones móviles y web de Google que proporciona servicios en la nube, incluyendo base de datos en tiempo real, autenticación, almacenamiento de archivos, entre otros.
+
+•	Google Maps API:
+o	Conjunto de herramientas y servicios proporcionados por Google que permiten la integración de mapas interactivos en aplicaciones.
+•	Hosting:
+
+o	Proceso de alojar y hacer accesible una aplicación, sitio web o servicio en un servidor remoto.
+
+•	Base de Datos en Tiempo Real (Firebase Realtime Database):
+o	Base de datos en la nube de Firebase que almacena y sincroniza datos en tiempo real entre los clientes conectados.
+
+•	Cloud Firestore:
+o	Base de datos en la nube de Firebase que ofrece una estructura de datos más rica y consultas más potentes que Firebase Realtime Database.
+
+13.	Referencias y recursos adicionales: Enlaces o referencias a otros recursos útiles, como documentación técnica relacionada, tutoriales o foros de soporte.
+
+14.	Herramientas de Implementación:
+•	Lenguajes de Programación:
+o	Java:
+Descripción: Lenguaje de programación de alto nivel utilizado en el desarrollo de la aplicación PRI-TAXI. Java proporciona portabilidad y es fundamental para la creación de aplicaciones Android.
+
+•	Frameworks:
+o	Ningún Framework Específico:
+Descripción: En este proyecto no se ha utilizado un framework específico, ya que la aplicación se ha desarrollado principalmente en Android Studio utilizando las capacidades nativas de desarrollo de Android.
+
+•	APIs de Terceros:
+o	API de Google Maps:
+Descripción: Utilizada para integrar la funcionalidad de mapas en la aplicación. Se accede a través de la clave de API proporcionada en el archivo google_maps_api ubicado en la carpeta res/values del proyecto. La clave de API actual es AIzaSyA_bUjws5l36K5mYV0D4aK9F3PL6Qv0WLo.
+
+•	Otros:
+o	Firebase:
+Descripción: Utilizado como plataforma integral para el almacenamiento de datos en tiempo real. La configuración de Firebase se realiza con la cuenta de correo denis.hamilton.almaquio@gmail.com y la contraseña Denis74704245. Esta cuenta permite verificar la correcta almacenación de datos en la base de datos Firebase.
+
+•	Comentarios Adicionales:
+o	La elección de Java como lenguaje de programación es coherente con el desarrollo de aplicaciones Android, ya que Android Studio es el entorno de desarrollo principal para este tipo de proyectos.
+
+o	La API de Google Maps se integra directamente en la aplicación para proporcionar funciones de mapas interactivos, mejorando la experiencia del usuario.
+
+o	Firebase se utiliza como una solución integral para el almacenamiento en tiempo real, proporcionando una base de datos confiable y fácil de usar.
+
+o	Se proporciona información detallada sobre la configuración de la API de Google Maps y la cuenta de Firebase utilizada para verificar la correcta funcionalidad del sistema.
+
+o	Este conjunto de herramientas y tecnologías ofrece una base sólida para el desarrollo y la implementación exitosa del proyecto PRI-TAXI.
+15.	Bibliografía
+Android Studio Documentation:
+Enlace: https://developer.android.com/studio/documentation
+Descripción: Documentación oficial de Android Studio proporcionada por Google. Contiene guías detalladas, referencias y tutoriales para el desarrollo de aplicaciones Android.
+Firebase Documentation:
+Enlace: https://firebase.google.com/docs?hl=es-419
+Descripción: Documentación oficial de Firebase, la plataforma de desarrollo de aplicaciones móviles y web de Google. Incluye información sobre el uso de Firebase para bases de datos, autenticación, almacenamiento de archivos y más.
+
+Google Maps Platform Documentation:
+Enlace: https://developers.google.com/maps/documentation?hl=es-419
+Descripción: Documentación oficial de Google Maps Platform. Proporciona información detallada sobre el uso de la API de Google Maps en aplicaciones, incluyendo guías y ejemplos de implementación.
+
+Java Programming Language Documentation:
+Enlace: https://docs.oracle.com/en/java/
+Descripción: Documentación oficial de Java, el lenguaje de programación utilizado en el desarrollo de aplicaciones Android. Incluye referencias detalladas y tutoriales para programadores Java.
+W3Schools - JavaScript Tutorial:
+Enlace: https://www.w3schools.com/js/
+Descripción: Tutorial interactivo de JavaScript en W3Schools. Ofrece una introducción y referencia completa para el desarrollo web con JavaScript.
